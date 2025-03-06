@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de la Amazonia - Portal</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header class="bg-success text-white p-3">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img class="header-logo" src="img/LogoSuperior.jpg" alt="Logo">
+                <h1 class="ms-3 mb-0">Universidad de la Amazonia</h1>
+            </div>
+            <div class="d-flex gap-3 header-redes">
+                <a href="#"><img src="img/001-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/002-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="img/003-tik-tok.png" alt="Tiktok"></a>
+                <a href="#"><img src="img/004-twitter.png" alt="X"></a>
+                <a href="#"><img src="img/005-youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Admisiones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programas Académicos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Estudiantes Activos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Investigación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bienestar Universitario</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Egresados</a></li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control" type="search" placeholder="Buscar...">
+        </form>
+    </div>
+</nav>
+
+<main class="container my-4">
+
+    <section class="eventos-destacados">
+        <h2 class="text-center">Eventos Destacados</h2>
+        <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/evento1.jpg" class="d-block w-100" alt="Evento 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/evento2.png" class="d-block w-100" alt="Evento 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/evento3.jpg" class="d-block w-100" alt="Evento 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="formulario-info mt-5">
+        <h2 class="text-center">¿Quieres más información?</h2>
+        <form class="mx-auto p-4 border rounded bg-light" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo:</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo">
+            </div>
+            <div class="mb-3">
+                <label for="programa" class="form-label">Programa de interés:</label>
+                <select class="form-select" id="programa">
+                    <option selected>Selecciona...</option>
+                    <option>Ingeniería de Sistemas</option>
+                    <option>Administración de Empresas</option>
+                    <option>Contaduría Pública</option>
+                    <option>Derecho</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje o consulta:</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="noticias mt-5">
+        <h2 class="text-center">Últimas Noticias</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Da el primer paso hacia tu futuro laboral!</h5>
+                        <p class="card-text">La Oficina de Graduados, junto a Comfaca, SENA y el Ministerio de Trabajo, trae la estrategia...</p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Vive el arte y la cultura en la Universidad de la...</h5>
+                        <p class="card-text">El Área de Arte y Cultura presenta su portafolio de eventos 2025, lleno de creatividad, innovación...</p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Noticia3.jpeg" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Día Mundial de la Eficiencia Energética</h5>
+                        <p class="card-text">Cuidar el planeta empieza con pequeñas acciones. Hagamos un uso responsable de la energía y...</p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>Sede Porvenir - Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir - Florencia, Caquetá, Colombia</p>
+        <p>atencionalciudadano@uniamazonia.edu.co | webmaster@uniamazonia.edu.co | njudiciales@uniamazonia.edu.co</p>
+        <p>&copy; 2025 uniamazonia.edu.co - Política de Privacidad - Vigilada por el Ministerio de Educación</p>
+        <p>Visitas: Hoy 0 | Este mes 0 | Total 38994</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
